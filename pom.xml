@@ -44,7 +44,7 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-        <!-- 🔑 JWT JJWT -->
+        <!-- 🔑 JWT -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-api</artifactId>
@@ -95,15 +95,6 @@
             <version>${springdoc.version}</version>
         </dependency>
 
-        <!-- ❌ DevTools (KHÔNG DÙNG TRONG PROD) 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        -->
-
         <!-- 🧪 Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -150,7 +141,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.jeweleryshop.JeweleryShopBackendApplication</mainClass>
+                    <!-- Sửa đúng package thật ở đây -->
+                    <mainClass>com.jeweleryshop.backend.JeweleryShopBackendApplication</mainClass>
                 </configuration>
             </plugin>
 
